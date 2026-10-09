@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathews Phiri | ICT Student Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Mathews Phiri</h1>
+    <p>Bachelor of Mathematics and ICT with Education</p>
+    <p>Welcome to my personal student portfolio.</p>
+
+    <a href="#projects" class="hero-button">View My Projects</a>
+    <button id="themeToggle" type="button">Switch Theme</button>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#learning">Learning Plan</a>
+    <a href="#projects">Projects & Skills</a>
+    <a href="#photos">Photos</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+    <!-- About Me -->
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Mathews Phiri, and I am a student at Mulungushi University
+            studying Bachelor of Mathematics and ICT with Education. I am interested
+            in technology, mathematics, education, and learning how websites are
+            created. Through ICT251 Web Technologies, I am learning how to use HTML,
+            CSS and JavaScript to develop webpages. I want to improve my web
+            development skills so that I can create useful and well-designed websites.
+            I also hope to use the knowledge I gain to support my future career in
+            education and technology.
+        </p>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="content-section">
+        <h2>My Hobbies</h2>
+
+        <p>
+            My hobbies are activities that I enjoy during my free time. They also
+            help me develop different skills and maintain a balanced student life.
+        </p>
+
+        <ul>
+            <li>Playing gospel music</li>
+            <li>Reading the Bible</li>
+            <li>Playing chess</li>
+        </ul>
+    </section>
+
+    <!-- Learning Plan -->
+    <section id="learning" class="content-section">
+        <h2>My Learning Plan</h2>
+
+        <h3>Steps I Will Take to Improve My Web Skills</h3>
+
+        <ol>
+            <li>
+                Practise writing HTML pages regularly and learn how different
+                HTML elements work.
+            </li>
+
+            <li>
+                Learn and practise CSS styling, responsive design, colours,
+                spacing and page layouts.
+            </li>
+
+            <li>
+                Build small websites and test them on different browsers and
+                screen sizes.
+            </li>
+
+            <li>
+                Learn basic JavaScript so that I can make my websites more
+                interactive.
+            </li>
+        </ol>
+
+        <h3>My Weekly Web Learning Plan</h3>
+
+        <table>
+            <caption>Weekly Web Learning Plan</caption>
+
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>
+                        Practise creating webpage structures using headings,
+                        paragraphs, links and lists.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS</td>
+                    <td>
+                        Practise colours, fonts, spacing, borders and layouts.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td>Responsive Web Design</td>
+                    <td>
+                        Test a webpage on different screen sizes and remove
+                        horizontal scrolling.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Projects and Skills -->
+    <section id="projects" class="content-section">
+        <h2>Projects and Skills</h2>
+
+        <p>
+            These are some of the web development skills I have learned and
+            practised through my ICT studies.
+        </p>
+
+        <div class="project-list">
+
+            <article class="project-card">
+                <h3>HTML Webpage Development</h3>
+                <p>
+                    I have learned how to structure webpages using headings,
+                    paragraphs, lists, links, images, tables and forms.
+                </p>
+                <button class="details-button" type="button">
+                    Show Details
+                </button>
+                <p class="project-details" hidden>
+                    I use semantic HTML elements such as header, nav, main,
+                    section and footer to organise webpage content.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3>CSS Web Design</h3>
+                <p>
+                    I have learned how to style webpages using colours,
+                    typography, spacing, borders and responsive layouts.
+                </p>
+                <button class="details-button" type="button">
+                    Show Details
+                </button>
+                <p class="project-details" hidden>
+                    I can use element, class and id selectors and apply the
+                    CSS box model to create a consistent page design.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3>JavaScript Interactivity</h3>
+                <p>
+                    I am learning how JavaScript can respond to user actions
+                    and update webpage content.
+                </p>
+                <button class="details-button" type="button">
+                    Show Details
+                </button>
+                <p class="project-details" hidden>
+                    I am practising events, functions, variables, arrays and
+                    DOM updates to make webpages interactive.
+                </p>
+            </article>
+
+        </div>
+
+        <h3>Study Hours Calculator</h3>
+
+        <p>
+            Enter your planned study hours per day and the number of days you
+            plan to study each week.
+        </p>
+
+        <form id="studyForm">
+            <label for="hoursPerDay">Hours per day:</label>
+            <input
+                type="number"
+                id="hoursPerDay"
+                min="0"
+                step="0.5"
+                required
+            >
+
+            <label for="daysPerWeek">Days per week:</label>
+            <input
+                type="number"
+                id="daysPerWeek"
+                min="1"
+                max="7"
+                required
+            >
+
+            <button type="submit">Calculate Weekly Hours</button>
+        </form>
+
+        <p id="studyResult"></p>
+    </section>
+
+    <!-- Photos -->
+    <section id="photos" class="content-section">
+        <h2>My Photos</h2>
+
+        <p>
+            These photos represent different parts of my student life and interests.
+        </p>
+
+        <div class="photo-viewer">
+
+            <img
+                id="galleryImage"
+                src="images/photo1.jpeg"
+                alt="A photo of my study environment"
+            >
+
+            <p id="galleryCaption">
+                Photo 1: My study environment.
+            </p>
+
+            <div class="gallery-buttons">
+                <button id="previousPhoto" type="button">Previous</button>
+                <button id="nextPhoto" type="button">Next</button>
+            </div>
+
+        </div>
+
+        <div class="photo-gallery">
+
+            <figure>
+                <img
+                    src="images/photo1.jpeg"
+                    alt="A photo of my study environment"
+                >
+                <figcaption>Photo 1: My study environment.</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/photo2.jpeg"
+                    alt="A photo related to study the the Bible"
+                >
+                <figcaption>
+                    Photo 2: My interest in studying the Bible.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/photo3.jpeg"
+                    alt="A photo representing my interest in chess"
+                >
+                <figcaption>
+                    Photo 3: My interest in chess.
+                </figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- Media -->
+    <section id="media" class="content-section">
+        <h2>My Media</h2>
+
+        <h3>My Introduction Video</h3>
+
+        <video controls>
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <p>
+            In this video, I introduce myself as Mathews Phiri, explain that I
+            am studying Bachelor of Mathematics and ICT with Education at
+            Mulungushi University, and describe a web skill that I hope to learn.
+        </p>
+
+        <h3>My Audio Clip</h3>
+
+        <audio controls>
+            <source src="videos/voice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>
+            In this audio recording, I talk about my journey in web technology,
+            my interest in learning web development, and my desire to use
+            technology to create useful solutions.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+
+        <p>
+            <strong>Browser demonstration only — no message is sent.</strong>
+        </p>
+
+        <form id="contactForm" action="#" method="post">
+
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
+            <p id="nameError" class="error-message"></p>
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+            <p id="emailError" class="error-message"></p>
+
+            <label for="topic">Topic:</label>
+            <input
+                type="text"
+                id="topic"
+                name="topic"
+            >
+
+            <label for="message">Message:</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+            ></textarea>
+            <p id="messageError" class="error-message"></p>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <div id="formPreview" class="form-preview" hidden></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Mathews Phiri. ICT251 Web Technologies.</p>
+
+    <p>
+        <a
+            href="https://github.com/mathews-mp/ICT251_Activity_2"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View Source on GitHub
+        </a>
+    </p>
+</footer>
+
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
